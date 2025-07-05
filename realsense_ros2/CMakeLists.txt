@@ -23,6 +23,8 @@ find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(tf2_msgs REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
+find_package(tf2_sensor_msgs REQUIRED)
 find_package(realsense2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(pcl_conversions REQUIRED)
@@ -55,6 +57,9 @@ include_directories(
   ${CMAKE_CURRENT_SOURCE_DIR}/include
   ${realsense2_INCLUDE_DIRS}
   ${EIGEN_INCLUDE_DIRS}
+  ${tf2_geometry_msgs_INCLUDE_DIRS}
+  ${tf2_sensor_msgs_INCLUDE_DIRS}
+  
 
 )
 
